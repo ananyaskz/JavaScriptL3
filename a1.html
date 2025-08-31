@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text"></p>
+    <button onclick="f1()">SORT</button>
+    <button onclick="f2()">REVERSE</button>
+    <p id="r"></p>
+    <script>
+        var friends=["Jisoo","Jennie","Rose","Lisa"];
+        document.getElementById("text").innerHTML=friends;
+        function f1(){
+            friends.sort();
+            document.getElementById("r").innerHTML=friends;
+        }
+            function f2() {
+                friends.reverse();
+                document.getElementById("r").innerHTML = friends;
+            }
+        
+    </script>
+</body>
+</html>

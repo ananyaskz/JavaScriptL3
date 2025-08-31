@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MAP</h1>
+    <p>MAP the array and add 10 in each numbers to create other mapping array</p>
+    <p id="res"></p>
+    <script>
+        var numbers=[45,35,36,49,90];
+
+        function fun1(n) {
+            return n + 10;
+        }
+        var arr2 = numbers.map(fun1);
+        document.getElementById("res").innerHTML=arr2;
+    </script>
+</body>
+</html>
